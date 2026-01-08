@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5f7;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #ffb6c1;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Navigation */
+nav {
+    background-color: #ff8fab;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 20px;
+    background-image: linear-gradient(#ffe4e9, #fff5f7);
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero button {
+    background-color: #ff5c8a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.hero button:hover {
+    background-color: #e04875;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #ff5c8a;
+}
+
+/* Menu */
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #ff8fab;
+    color: white;
+    padding: 15px;
+}
