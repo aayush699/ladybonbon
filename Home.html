@@ -1,14 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lady Bon Bon Bakery</title>
 
-    <!-- Header -->
-    <header>
-        <h1>Lady Bon Bon</h1>
-        <p>Cake & Bakery Shop</p>
-    </header>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Contact</a>
-    </nav>
+body{
+    background:#fff8f5;
+    color:#333;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#ffb6c1;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:bold;
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#8b4513;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ff1493;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+    color:#d63384;
+}
+
+/* Menu */
+.menu-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.menu-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.menu-card img{
+    width:100%;
+    border-radius:10px;
+    height:200px;
+    object-fit:cover;
+}
+
+.menu-card h3{
+    margin:15px 0;
+    color:#d63384;
+}
+
+/* Order Form */
+.order-form{
+    max-width:600px;
+    margin:auto;
+}
+
+.order-form input,
+.order-form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.order-form button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#ff69b4;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+.order-form button:hover{
+    background:#ff1493;
+}
+
+/* Contact */
+.contact-box{
+    text-align:center;
+    font-size:1.1rem;
+    line-height:2;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ffb6c1;
+    color:white;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <div class="logo">Lady Bon Bon</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Lady Bon Bon Bakery</h1>
+        <p>Freshly Baked Happiness Every Day</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="menu-container">
+
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+            <h3>Chocolate Cake</h3>
+            <p>Rich chocolate flavor</p>
+            <h4>Rs. 1200</h4>
+        </div>
+
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05">
+            <h3>Red Velvet Cake</h3>
+            <p>Soft and delicious</p>
+            <h4>Rs. 1500</h4>
+        </div>
+
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d">
+            <h3>Cupcakes</h3>
+            <p>Perfect for every occasion</p>
+            <h4>Rs. 150 each</h4>
+        </div>
+
+    </div>
+</section>
+
+<!-- ORDER -->
+<section id="order">
+    <h2 class="section-title">Place an Order</h2>
+
+    <div class="order-form">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="tel" id="phone" placeholder="Phone Number">
+        <input type="text" id="cake" placeholder="Cake Name">
+        <textarea id="message" rows="5" placeholder="Order Details"></textarea>
+
+        <button onclick="placeOrder()">Submit Order</button>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-box">
+        <p><strong>Lady Bon Bon Bakery</strong></p>
+        <p>📍 Kathmandu, Nepal</p>
+        <p>📞 +977 98XXXXXXXX</p>
+        <p>✉️ ladybonbonbakery@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Lady Bon Bon Bakery | All Rights Reserved
+</footer>
+
+<script>
+function placeOrder(){
+
+    let name = document.getElementById("name").value;
+    let cake = document.getElementById("cake").value;
+
+    if(name === "" || cake === ""){
+        alert("Please fill all required fields.");
+        return;
+    }
+
+    alert(
+        "Thank you " +
+        name +
+        "! Your order for " +
+        cake +
+        " has been received."
+    );
+
+    document.querySelector(".order-form").reset();
+}
+</script>
+
+</body>
+</html>
